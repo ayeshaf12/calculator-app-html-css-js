@@ -108,6 +108,7 @@ function evaluateExpression(){
 }
 
 
+
 function negate() {
     if(expression === '' && result !==''){
         result = -result;
