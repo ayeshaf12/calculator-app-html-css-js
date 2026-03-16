@@ -49,10 +49,10 @@ function buttonClick(event){
 }
 
 inputBox.addEventListener('click',buttonClick);
-
+     
 function addValue(value){
     if (value ==='.'){
-        const lastOperatorIndex = expression.search(/[+\-*/]/)
+        const lastOperatorIndex = expression.lastIndexOf(/[+\-*/]/)
         const lastDecimalIndex=expression.lastIndexOf('.');
         const lastNumberIndex=Math.max
         (expression.lastIndexOf('+'),
@@ -140,3 +140,4 @@ function decimal(value){
     }
 }
 
+   
