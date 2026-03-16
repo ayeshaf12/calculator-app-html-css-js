@@ -4,6 +4,7 @@ const resultDiv=document.getElementById('result');
 
 let expression='';
 let result='';
+// (Select a line , do Shift+Alt+down to copy the same line)
 
 function buttonClick(event){
     const target=event.target;
@@ -100,6 +101,7 @@ function submit(){
 
  //eval is inbuilt JS which takes all expressions into result
  //but here in eval its easy to hack your website but if you are taking info from  anyone its a problem
+//  toFixed returns a string and parseFloat converts it to a number 
 function evaluateExpression(){
     const evalResult=eval(expression);
     return isNaN(evalResult) || !isFinite(evalResult)? '' : 
